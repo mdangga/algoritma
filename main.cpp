@@ -6,7 +6,7 @@ using namespace std;
 
 const int karyawanMaks = 100;
 
-int countEmployeesWith8Million = 0;  // Counter for employees receiving 8 million
+int karyawanMendapatkan8Juta = 0;
 
 void tampil_hasil(long long distribusiSekarang[], int index) {
     cout << "Output: " << index << " orang\n";
@@ -14,11 +14,11 @@ void tampil_hasil(long long distribusiSekarang[], int index) {
     for (int i = 0; i < index; ++i) {
         cout << "Karyawan " << i + 1 << ": Rp. " << distribusiSekarang[i] << endl;
         if (distribusiSekarang[i] == 8000000) {
-            countEmployeesWith8Million++;
+            karyawanMendapatkan8Juta++;
         }
     }cout << "Jumlah karyawan yang menerima Rp. 8 juta: ";
     if(distribusiSekarang[i] == 8000000){
-        cout<< countEmployeesWith8Million << endl;
+        cout<< karyawanMendapatkan8Juta << endl;
     }else{
         cout << "Tidak Diketahui" <<endl;
     }
