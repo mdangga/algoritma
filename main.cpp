@@ -6,6 +6,7 @@ using namespace std;
 
 const int karyawanMaks = 100;
 
+
 int karyawanMendapatkan8Juta = 0;
 
 void tampil_hasil(long long distribusiSekarang[], int index) {
