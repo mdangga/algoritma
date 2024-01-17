@@ -10,16 +10,21 @@ int countEmployeesWith8Million = 0;  // Counter for employees receiving 8 millio
 
 void tampil_hasil(long long distribusiSekarang[], int index) {
     cout << "Output: " << index << " orang\n";
-    cout << "Jumlah karyawan yang menerima Rp. 8 juta: " << countEmployeesWith8Million << endl;
 
     for (int i = 0; i < index; ++i) {
         cout << "Karyawan " << i + 1 << ": Rp. " << distribusiSekarang[i] << endl;
         if (distribusiSekarang[i] == 8000000) {
             countEmployeesWith8Million++;
         }
+    }cout << "Jumlah karyawan yang menerima Rp. 8 juta: ";
+    if(distribusiSekarang[i] == 8000000){
+        cout<< countEmployeesWith8Million << endl;
+    }else{
+        cout << "Tidak Diketahui" <<endl;
     }
     exit(0);
 }
+
 
 void proses_distribusi(long long total, int sisaKaryawan, long long distribusiSekarang[], int index, set<string>& dikunjungi, map<string, bool>& temp) {
     if (sisaKaryawan == 0) {
