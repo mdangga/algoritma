@@ -19,7 +19,7 @@ void tampil_hasil(long long distribusiSekarang[], int index) {
             karyawanMendapatkan8Juta++;
         }
     }cout << "Jumlah karyawan yang menerima Rp. 8 juta: ";
-    if(distribusiSekarang[i] == 8000000){
+    if(karyawanMendapatkan8Juta != 0){
         cout<< karyawanMendapatkan8Juta << endl;
     }else{
         cout << "Tidak Diketahui" <<endl;
